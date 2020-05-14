@@ -58,6 +58,7 @@ class NPU:
                             cl.append([x_i, x_j])
 
                     neighborhoods.append([x_i])
+                    self.clusterer.n_clusters += 1
 
             except MaximumQueriesExceeded:
                 break
