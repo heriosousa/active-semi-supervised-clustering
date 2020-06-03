@@ -122,5 +122,5 @@ class NPU:
 
         normalized_uncertainties = uncertainties / expected_costs
 
-        most_informative_i = np.argmin(normalized_uncertainties)
+        most_informative_i = np.argmax(normalized_uncertainties)
         return most_informative_i, p[most_informative_i]
